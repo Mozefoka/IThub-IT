@@ -72,7 +72,7 @@ const teachingBlocks: Teaching[] = [
   <section class="student-teaching">
     <div class="container">
       <div class="student-teaching__inner">
-        <h2 class="student-teaching__title title-md">{{ props.title }}</h2>
+        <h2 class="student-teaching__title">{{ props.title }}</h2>
 
         <div class="student-teaching__content">
           <div class="student-teaching__header">
@@ -131,16 +131,23 @@ const teachingBlocks: Teaching[] = [
   }
 
   &__title {
-    max-width: 460px;
+    max-width: 550px;
+    font-weight: 700;
+    font-size: clamp(25px, 3vw, 45px);
+    line-height: clamp(25px, 3vw, 45px);
     text-align: center;
   }
 
   &__header {
+    max-width: 625px;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
+
+      @media (max-width: 399px) {
+        gap: 15px;
+      }
   }
 
   &__header-title {

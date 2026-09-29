@@ -36,7 +36,7 @@ const props = defineProps<Props>()
 
     <div class="container" :class="`container--${props.container}`">
       <div class="study-program__intro">
-        <h2 class="study-program__title title-md">Следующий кейс может быть твоим!</h2>
+        <h2 class="study-program__title">Следующий кейс может быть твоим!</h2>
         <p class="study-program__subtitle">
           Выбери направление в маркетинге и начни создавать своё портфолио ещё во время обучения
         </p>
@@ -114,17 +114,21 @@ const props = defineProps<Props>()
   }
 
   &__intro {
-    max-width: 500px;
+    max-width: 550px;
     margin-bottom: 20px;
   }
 
   &__title {
+    font-weight: 700;
+    font-size: clamp(25px, 2.5vw, 40px);
+    line-height: clamp(25px, 2.5vw, 40px);
     margin-bottom: 15px;
   }
 
   &__subtitle {
-    font-size: clamp(12px, 1vw, 14px);
+    font-size: clamp(12px, 1vw, 17px);
     line-height: 1.5;
+    color: $color-gray;
   }
 }
 
@@ -210,7 +214,6 @@ const props = defineProps<Props>()
     padding-left: 10px;
     font-size: clamp(12px, 1vw, 14px);
     line-height: 20px;
-    color: $color-gray;
 
     &::before {
       content: '•';
@@ -284,6 +287,13 @@ const props = defineProps<Props>()
   &__button {
     grid-area: button;
     align-self: flex-end;
+
+    button {
+      padding: 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
   }
 }
 </style>
