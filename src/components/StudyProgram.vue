@@ -107,7 +107,7 @@ const props = defineProps<Props>()
   }
 
   &__top-image {
-    max-width: 500px;
+    max-width: 550px;
     position: relative;
     left: 60%;
     transform: translateX(-60%);
