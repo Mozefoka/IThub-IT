@@ -60,18 +60,12 @@ const props = defineProps<Props>()
 @use '@/styles/mixins' as *;
 
 .hero {
-  @include zoom;
-
   position: relative;
   overflow: hidden;
-  margin-bottom: $margin-bottom;
+  padding-bottom: 170px;
 
   &--zoom {
-    zoom: 1.6;
-
-    @media (max-width: 1549px) {
-      zoom: 1.4;
-    }
+    zoom: 1.4;
 
     @media (max-width: 1349px) {
       zoom: 1.2;
@@ -255,20 +249,18 @@ const props = defineProps<Props>()
     z-index: 3;
 
     @media (max-width: 959px) {
-      left: -3%;
-      bottom: -65%;
+      max-width: 130px;
+      left: 0;
+      bottom: 0;
     }
 
-    @media (max-width: 469px) {
-      max-width: 150px;
-      left: 5%;
-      bottom: -45%;
+    @media (max-width: 539px) {
+      left: 10%;
+      bottom: -50%;
     }
 
     @media (max-width: 439px) {
-      max-width: 130px;
-      left: -10%;
-      bottom: -50%;
+      left: -13%;
     }
   }
 
