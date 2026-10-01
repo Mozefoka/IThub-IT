@@ -88,7 +88,7 @@ const props = defineProps<Props>()
     }
 
     @media (max-width: 499px) {
-      zoom: 1.3;
+      zoom: 1.4;
     }
   }
 
@@ -149,8 +149,8 @@ const props = defineProps<Props>()
       }
 
       @media (max-width: 499px) {
-        max-width: 150px;
-        left: 41%;
+        max-width: 120px;
+        left: 39%;
       }
 
       @media (max-width: 399px) {
@@ -247,6 +247,10 @@ const props = defineProps<Props>()
       width: 450px;
     }
 
+      @media (max-width: 499px) {
+        width: 400px;
+      }
+
     @media (max-width: 439px) {
       width: 300px;
     }
@@ -275,6 +279,12 @@ const props = defineProps<Props>()
       bottom: -50%;
     }
 
+      @media (max-width: 469px) {
+        max-width: 100px;
+        left: 10%;
+        bottom: -25%;
+      }
+
     @media (max-width: 439px) {
       left: -13%;
     }
@@ -291,6 +301,12 @@ const props = defineProps<Props>()
       top: -25%;
       right: 0;
     }
+
+      @media (max-width: 539px) {
+        max-width: 100px;
+        top: -15%;
+        right: 20px;
+      }
 
     @media (max-width: 439px) {
       max-width: 120px;
