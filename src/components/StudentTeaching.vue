@@ -187,6 +187,7 @@ const teachingBlocks: Teaching[] = [
 
     @media (max-width: 479px) {
       grid-template-columns: 1fr;
+      gap: 10px;
     }
   }
 
@@ -198,6 +199,11 @@ const teachingBlocks: Teaching[] = [
 
     @media (max-width: 479px) {
       width: 100%;
+
+
+        &:nth-child(2n) {
+          margin-bottom: 30px;
+        }
     }
 
     &--dark {

@@ -64,6 +64,10 @@ const props = defineProps<Props>()
   overflow: hidden;
   padding-bottom: 170px;
 
+  @media (max-width: 539px) {
+    padding-bottom: 190px;
+  }
+
   &--zoom {
     zoom: 1.4;
 
@@ -73,6 +77,18 @@ const props = defineProps<Props>()
 
     @media (max-width: 1179px) {
       zoom: 1;
+    }
+
+    @media (max-width: 659px) {
+      zoom: 1.1;
+    }
+
+    @media (max-width: 539px) {
+      zoom: 1.2;
+    }
+
+    @media (max-width: 499px) {
+      zoom: 1.3;
     }
   }
 
